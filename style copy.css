@@ -1,0 +1,231 @@
+body,
+html {
+  font-family: 'Questrial', sans-serif;
+  height: 100%;
+  margin: 0;
+  background: rgb(235, 238, 243);
+
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+h1 {
+  font-family: 'Anonymous Pro';
+  font-size: 10em;
+  line-height: 1.0em;
+}
+
+h2 {
+  font-family: 'Questrial';
+  font-size: 3em;
+}
+
+.intro {
+  text-align: left;
+  position: relative;
+  top: 32%;
+  left: 9%;
+}
+
+.anim-typewriter{
+  animation: typewriter 0.8s steps(4) 2s 1 normal both,
+  blinkTextCursor 600ms steps(6) 2 normal;
+  animation-delay: 0.7s;
+}
+@keyframes typewriter{
+  0%{
+    width: 0;
+    overflow: hidden;
+  }
+  99%{
+    width: 22em;
+    overflow: hidden;
+  }
+  100%{
+    width: 22em;
+    overflow: visible;
+  }
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: transparent}
+  to{border-right-color: rgb(64, 62, 62);}
+}
+
+.anim-typewriter2{
+  animation: typewriter2 1s steps(5) 2s 1 normal both,
+  blinkTextCursor2 600ms steps(6) infinite normal;
+  animation-delay: 2.0s;
+}
+@keyframes typewriter2{
+  0%{
+    width: 0;
+    overflow: hidden;
+  }
+  99%{
+    width: 27em;
+    overflow: hidden;
+  }
+  100%{
+    width: 27em;
+    overflow: visible;
+  }
+}
+@keyframes blinkTextCursor2{
+  from{border-right-color: transparent}
+  to{border-right-color: rgb(64, 62, 62)}
+}
+
+.header-img {
+  background-image: url("website_bg.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+}
+
+.header-text {
+  text-align: left;
+  position: relative;
+  top: 40%;
+  left: 9%;
+  color:rgb(64, 62, 62);
+  border-right: 2px solid transparent;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.second {
+  top: 37%;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle1 {
+  height: 4VW;
+  width: 35VW;
+  background: rgb(64, 62, 62);
+  position: relative;
+  margin: 2% 3%;
+  text-align: center;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.nav-link {
+  font-family: Questrial;
+}
+
+.tributtons {
+  
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background: rgb(44, 44, 43);
+  color: white;
+}
+
+.fa:hover {
+  background-color: rgb(89, 86, 86);
+  border-color: rgb(89, 86, 86);
+}
+
+.fa:active {
+  background-color: rgb(44, 44, 43) !important;
+}
+
+/* Main button on main page */
+.reg-btn {
+  width: 11VW;
+  height: 4VW;
+  font-weight: 2VW;
+  font-size: 1.2VW;
+  border-radius: 300px;
+  text-transform: uppercase;
+  padding: 1% 2%;
+  margin: 0% 1%;
+}
+
+.send-down span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.send-down span:after {
+  font-size: 100%;
+  content: '\25BC';
+  padding-top: 1.4%;
+  padding-right: 12%;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.send-down:hover span {
+  padding-right: 40%;
+}
+
+.send-down:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+#section2 {
+  background-color: rgb(255, 255, 255);
+  margin-top: 50%;
+}
+
+#section3 {
+  background-color:rgb(255, 255, 255);
+  margin-top: 20%;
+}
+
+.homebtns {
+  margin: 6% 1%;
+}
+
+.homepic {
+  width: 40%;
+  height: 40%;
+  position: relative;
+}
