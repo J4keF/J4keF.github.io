@@ -85,7 +85,7 @@ h3 {
 }
 
 .header-img {
-  background-image: url("website_bg.png");
+  background: url(website_bg.png);
   height: 100%;
   width: 100%;
   background-position: center;
@@ -93,6 +93,13 @@ h3 {
   background-size: cover;
   display: block;
   position: relative;
+  transition: background-image 0.5s ease;
+}
+
+@media (max-width:629px) {
+  .header-img {
+    background-image: url(nojake.png);
+  }
 }
 
 .header-text {
