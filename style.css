@@ -2,13 +2,11 @@ body,
 html {
   font-family: 'Questrial', sans-serif;
   height: 100%;
-  margin: 0;
   background: rgb(235, 238, 243);
 
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  
 }
 
 @keyframes fadeInAnimation {
@@ -87,9 +85,8 @@ h3 {
 }
 
 .header-img {
-  margin-bottom: 2%;
   background-image: url("website_bg.png");
-  height: 52em;
+  height: 100%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,10 +159,10 @@ img {
 
 /* Main button on main page */
 .reg-btn {
-  width: 11VW;
-  height: 4VW;
-  font-weight: 2VW;
-  font-size: 1.2VW;
+  width: 9em;
+  height: 3em;
+  font-weight: 2em;
+  font-size: 1.2em;
   border-radius: 300px;
   text-transform: uppercase;
   padding: 1% 2%;
@@ -177,7 +174,7 @@ img {
   background-color: transparent;
   opacity: 0;
   border-color: rgba(131,168,139,255);
-  top: 37rem;
+  top: 36rem;
   left: 8%;
   color:rgb(64, 62, 62);
   transition: 0.5;
@@ -205,10 +202,6 @@ img {
   border-color: transparent;
 }
 
-.send-down:hover span {
-  
-}
-
 .left {
   float: left;
 }
@@ -219,7 +212,6 @@ img {
 
 #section2 {
   background-color: rgb(255, 255, 255);
-  margin-top: 2%;
 }
 
 #section3 {
