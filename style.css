@@ -182,7 +182,6 @@ h3 {
   border-right: 2px solid transparent;
   transform: translateY(-50%);
   overflow: hidden;
-  
 }
 
 .second {
@@ -272,7 +271,7 @@ img {
 
 .send-down span:after {
   font-size: 100%;
-  
+  background-color: transparent;
 }
 
 .send-down:hover {
