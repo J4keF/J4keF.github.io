@@ -20,8 +20,9 @@ html {
 
 h1 {
   font-family: 'Anonymous Pro';
-  font-size: 8.4em;
+  font-size: 8.6em;
   line-height: 0.9em;
+  transition: font-size 0.5s;
 }
 
 h2 {
@@ -40,6 +41,7 @@ h3 {
   animation: typewriter 0.8s steps(4) 2s 1 normal both,
   blinkTextCursor 600ms steps(6) 2 normal;
   animation-delay: 0.7s;
+  transition: width 0.8s;
 }
 @keyframes typewriter{
   0%{
@@ -64,7 +66,9 @@ h3 {
   animation: typewriter2 1s steps(5) 2s 1 normal both,
   blinkTextCursor2 600ms steps(6) infinite normal;
   animation-delay: 2.0s;
+  transition: width 0.8s;
 }
+
 @keyframes typewriter2{
   0%{
     width: 0;
@@ -93,13 +97,78 @@ h3 {
   background-size: cover;
   display: block;
   position: relative;
-  transition: background-image 0.5s ease;
+  transition: background-image 0.5s;
 }
 
+/*mobile formatting*/
 @media (max-width:629px) {
   .header-img {
     background-image: url(nojake.png);
     background-position: cover;
+  }
+
+  @keyframes typewriter{
+    0%{
+      width: 0;
+      overflow: hidden;
+    }
+    99%{
+      width: 15.5em;
+      overflow: hidden;
+    }
+    100%{
+      width: 15.5em;
+      overflow: visible;
+    }
+  }
+
+  @keyframes typewriter2{
+    0%{
+      width: 0;
+      overflow: hidden;
+    }
+    99%{
+      width: 20em;
+      overflow: hidden;
+    }
+    100%{
+      width: 20em;
+      overflow: visible;
+    }
+  }
+
+  h1 {
+    font-size: 7.3em;
+  }
+}
+
+@keyframes typewriter2mobile{
+  0%{
+    width: 0;
+    overflow: hidden;
+  }
+  99%{
+    width: 20em;
+    overflow: hidden;
+  }
+  100%{
+    width: 20em;
+    overflow: visible;
+  }
+}
+
+@keyframes typewritermobile{
+  0%{
+    width: 0;
+    overflow: hidden;
+  }
+  99%{
+    width: 15.5em;
+    overflow: hidden;
+  }
+  100%{
+    width: 15.5em;
+    overflow: visible;
   }
 }
 
