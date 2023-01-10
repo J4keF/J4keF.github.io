@@ -105,10 +105,11 @@ h3 {
   .header-img {
     background-image: url(nojake.png);
     background-position: cover;
+    
   }
 
   @keyframes typewriter{
-    0%{
+    0% {
       width: 0;
       overflow: hidden;
     }
