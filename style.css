@@ -240,17 +240,17 @@ img {
   height: 3em;
   font-weight: 2em;
   font-size: 1.2em;
-  border-radius: 300px;
+  border-radius: 40rem;
   text-transform: uppercase;
   padding: 1% 2%;
   margin: 0% 1%;
 }
 
-.send-down {
+#send-down {
   position: absolute;
   background-color: transparent;
   opacity: 0;
-  border-color: rgba(131,168,139,255);
+  border-color: rgba(131,168,139);
   top: 36rem;
   left: 8%;
   color:rgb(64, 62, 62);
@@ -262,21 +262,19 @@ img {
   animation-fill-mode: forwards;
 }
 
-.send-down span {
+.reg-btn{
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.05s;
 }
 
-.send-down span:after {
-  font-size: 100%;
-  background-color: transparent;
+.reg-btn:hover {
+  background: rgb(202,210,197);
 }
 
-.send-down:hover {
-  background: rgba(202,210,197,255);
-  border-color: transparent;
+.reg-btn:active {
+  background: rgb(99, 104, 97);
 }
 
 .left {
