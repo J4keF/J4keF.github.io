@@ -29,7 +29,10 @@ h2 {
   text-align: left;
   font-size: 2em;
   position: absolute;
-  top: 30%;
+}
+
+.intro {
+  top: 29%;
   left: 9%;
 }
 
@@ -176,7 +179,7 @@ h3 {
 .header-text {
   text-align: left;
   position: absolute;
-  top: 22em;
+  top: 40%;
   left: 9%;
   color:rgb(64, 62, 62);
   border-right: 2px solid transparent;
@@ -185,53 +188,12 @@ h3 {
 }
 
 .second {
-  top: 30em;
+  top: 54%;
 }
 
 img {
   display: flex;
   justify-content: center;
-}
-
-.rectangle1 {
-  height: 4VW;
-  width: 35VW;
-  background: rgb(64, 62, 62);
-  position: relative;
-  margin: 2% 3%;
-  text-align: center;
-}
-
-.navbar {
-  background: transparent;
-}
-
-.nav-link {
-  font-family: Questrial;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa-linkedin {
-  background: rgb(44, 44, 43);
-  color: white;
-}
-
-.fa:hover {
-  background-color: rgb(89, 86, 86);
-  border-color: rgb(89, 86, 86);
-}
-
-.fa:active {
-  background-color: rgb(44, 44, 43) !important;
 }
 
 /* Main button on main page */
@@ -240,21 +202,26 @@ img {
   height: 3em;
   font-weight: 2em;
   font-size: 1.2em;
-  border-radius: 40rem;
+  border-radius: 2rem;
   text-transform: uppercase;
-  padding: 1% 2%;
+  background-color: transparent;
+  border-color: rgba(131,168,139, 255);
+  padding: 1% 1%;
   margin: 0% 1%;
+  border-style: solid;
+
+  transition: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  line-height: 22px;
 }
 
-#send-down {
+.send-down {
   position: absolute;
-  background-color: transparent;
   opacity: 0;
-  border-color: rgba(131,168,139);
-  top: 36rem;
+  top: 64%;
   left: 8%;
-  color:rgb(64, 62, 62);
-  transition: 0.5;
   animation: fadeInAnimation ease 2s;
  
   animation-delay: 3.7s;
@@ -262,19 +229,14 @@ img {
   animation-fill-mode: forwards;
 }
 
-.reg-btn{
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.05s;
-}
-
 .reg-btn:hover {
+  color: rgb(235, 238, 243);
   background: rgb(202,210,197);
+  border-color: rgb(202,210,197);
 }
 
 .reg-btn:active {
-  background: rgb(99, 104, 97);
+  background: rgb(159, 167, 156);
 }
 
 .left {
