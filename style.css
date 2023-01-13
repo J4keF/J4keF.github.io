@@ -214,7 +214,7 @@ img {
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  line-height: 22px;
+  line-height: 0em;
 }
 
 .send-down {
@@ -247,13 +247,20 @@ img {
   float: right;
 }
 
+h3{
+  display: inline;
+}
+
+p {
+  margin: 0%;
+}
+
 #section2 {
   background-color: rgb(255, 255, 255);
 }
 
 #section3 {
   background-color:rgb(255, 255, 255);
-  margin-top: 20%;
 }
 
 .homebtns {
