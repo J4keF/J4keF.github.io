@@ -2,6 +2,7 @@ body,
 html {
   font-family: 'Questrial', sans-serif;
   height: 100%;
+  width: 100%;
   background: rgb(235, 238, 243);
 
   animation: fadeInAnimation ease 3s;
@@ -38,6 +39,9 @@ h2 {
 
 h3 {
   color: rgb(64, 62, 62);
+  position: relative;
+  padding-top: 0.5em;
+  font-size: 2.6em;
 }
 
 .anim-typewriter{
@@ -179,7 +183,7 @@ h3 {
 .header-text {
   text-align: left;
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 9%;
   color:rgb(64, 62, 62);
   border-right: 2px solid transparent;
@@ -188,12 +192,15 @@ h3 {
 }
 
 .second {
-  top: 54%;
+  top: 56%;
 }
 
+
+
 img {
-  display: flex;
-  justify-content: center;
+  margin: 1em;
+  width: 100%;
+  height: auto;
 }
 
 /* Main button on main page */
@@ -220,7 +227,7 @@ img {
 .send-down {
   position: absolute;
   opacity: 0;
-  top: 64%;
+  top: 66%;
   left: 8%;
   animation: fadeInAnimation ease 2s;
  
@@ -247,16 +254,26 @@ img {
   float: right;
 }
 
-h3{
-  display: inline;
-}
 
 p {
   margin: 0%;
 }
 
+.explr {
+  margin: 0em, 2em;
+  border-color: transparent;
+  padding: 0em;
+}
+
 #section2 {
   background-color: rgb(255, 255, 255);
+  height: 20em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: space-around;
 }
 
 #section3 {
@@ -271,4 +288,69 @@ p {
   width: 40%;
   height: 40%;
   position: relative;
+}
+
+#blender {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: space-around;
+  height: auto;
+
+  padding: 5%;
+  
+}
+
+.flexcol {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: space-around;
+  height: auto;
+
+  padding: 5%;
+}
+
+.portfol {
+  border-radius: 1.4em;
+  width: 23em;
+  min-width: 22em;
+}
+
+#blend1 {
+  flex-shrink: 0;
+  min-width: 22em;
+}
+
+.button2 {
+  width: 8em;
+  height: 3em;
+  font-weight: 1em;
+  font-size: 0.4em;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-color: rgba(131,168,139, 255);
+  padding: 1% 1%;
+  margin: 1em 0%;
+  border-style: solid;
+  align-self: center;
+
+  transition: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  line-height: 0em;
+}
+
+.button2:hover {
+  color: rgb(235, 238, 243);
+  background: rgb(202,210,197);
+  border-color: rgb(202,210,197);
 }
