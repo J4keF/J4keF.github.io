@@ -300,6 +300,7 @@ p {
   align-content: space-around;
   height: auto;
   padding: 5%;
+  column-gap: 4%;
   
 }
 
