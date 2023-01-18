@@ -28,8 +28,9 @@ h1 {
 
 h2 {
   text-align: left;
-  font-size: 2em;
+  font-size: 2.5em;
   position: absolute;
+  margin: 0%;
 }
 
 .intro {
@@ -240,6 +241,7 @@ img {
   color: rgb(235, 238, 243);
   background: rgb(202,210,197);
   border-color: rgb(202,210,197);
+  cursor: pointer;
 }
 
 .reg-btn:active {
@@ -256,7 +258,16 @@ img {
 
 
 p {
-  margin: 0%;
+  margin: 4% 20%;
+}
+
+.about {
+  position:relative;
+  text-align: center;
+}
+
+#mint {
+  background-color:rgb(240, 255, 241);
 }
 
 .explr {
@@ -290,18 +301,22 @@ p {
   position: relative;
 }
 
-#blender {
+.blender {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+
   justify-content: space-evenly;
   align-items: stretch;
   align-content: space-around;
   height: auto;
-  padding: 5%;
+  padding: 10%;
   column-gap: 4%;
-  
+
+  width: 100%;
+
 }
 
 .flexcol {
@@ -321,11 +336,46 @@ p {
   border-radius: 1.4em;
   width: 23em;
   min-width: 22em;
+
+  width: 100%;
+  max-width: 22em;
+  transition: 0.2s ease;
+}
+
+.portfol:hover {
+  transform: scale(1.06);
 }
 
 #blend1 {
   flex-shrink: 0;
   min-width: 22em;
+  background: url(python.png);
+  background-size: cover;
+}
+
+#blend2 {
+  background: url(chessgame.png);
+  background-size: cover;
+}
+
+#blend3 {
+  background: url(CSSHTML.png);
+  background-size: cover;
+}
+
+#blend4 {
+  background: url(blend4.png);
+  background-size: cover;
+}
+
+#pic5 {
+  background: url(mcgill.jpeg);
+  background-size: cover;
+}
+
+#pic6 {
+  background: url(resume.png);
+  background-size: cover;
 }
 
 .button2 {
@@ -341,16 +391,43 @@ p {
   margin: 1em 0%;
   border-style: solid;
   align-self: center;
+  color: inherit;
 
   transition: 0.5s;
   cursor: pointer;
   display: inline-block;
   position: relative;
   line-height: 0em;
+  cursor: pointer;
 }
 
 .button2:hover {
   color: rgb(235, 238, 243);
   background: rgb(202,210,197);
   border-color: rgb(202,210,197);
+  cursor: pointer;
+}
+
+.socials {
+  padding: 0.5em;
+  margin: 2%;
+  font-size: 2em;
+  width: fit-content;
+  height: fit-content;
+}
+
+.flexsocials {
+  top: 2.5%;
+  left: 3.4%;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2%;
+  align-items: left;
+  align-content: left;
+  height: auto;
+
+  padding: 5%;
 }

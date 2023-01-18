@@ -38,3 +38,7 @@ h1 {
     top: 10%;
     left: 2%;
 }
+
+.flexsocials {
+    display: flex;
+}
