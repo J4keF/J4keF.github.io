@@ -302,7 +302,7 @@ p {
   position: relative;
 }
 
-.blender {
+.showcase {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
