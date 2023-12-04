@@ -33,16 +33,16 @@ h2 {
   margin: 0%;
 }
 
-.intro {
-  top: 29%;
-  left: 9%;
-}
-
 h3 {
   color: rgb(64, 62, 62);
   position: relative;
   padding-top: 0.5em;
   font-size: 2.6em;
+}
+
+.intro {
+  top: 29%;
+  left: 9%;
 }
 
 .anim-typewriter{
@@ -321,7 +321,6 @@ p {
 }
 
 .flexcol {
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -330,6 +329,8 @@ p {
   align-content: space-around;
   height: auto;
 
+  z-index: 2;
+
   padding: 5%;
 }
 
@@ -337,6 +338,8 @@ p {
   border-radius: 1.4em;
   width: 23em;
   min-width: 22em;
+
+  z-index: 2;
 
   width: 100%;
   max-width: 22em;
@@ -394,6 +397,8 @@ p {
   border-style: solid;
   align-self: center;
   color: inherit;
+  
+  background-color: #ffffffd4;
 
   transition: 0.5s;
   cursor: pointer;
@@ -432,4 +437,42 @@ p {
   height: auto;
 
   padding: 5%;
+}
+
+.spinShape {
+  height: 0px;
+}
+
+#squiggle {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  stroke:#8ba78d;
+  stroke-width: 10px;
+  fill: none;
+  width: 100vw;
+  transition: stroke-width 0.5s;
+
+}
+
+#svgStyle {
+  z-index: 1;
+  position: relative;
+
+
+  top: -56px;
+  left: 0vw;
+  width: 100vw;
+  height: 111vh;
+  background: white;
+
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+  animation: lineStroke 6s linear forwards infinite;
+}
+
+@keyframes lineStroke {
+  to {
+    stroke-dashoffset: -2500;
+  }
 }
