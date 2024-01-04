@@ -451,7 +451,7 @@ p {
   stroke-width: 10px;
   fill: none;
   width: 100vw;
-  transition: stroke-width 0.01s;
+  transition: stroke-width 0.1s;
 
 }
 
