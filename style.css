@@ -451,24 +451,21 @@ p {
   stroke-width: 10px;
   fill: none;
   width: 100vw;
-  transition: stroke-width 0.5s;
+  transition: stroke-width 0.01s;
 
 }
 
 #svgStyle {
   z-index: 1;
-  position: relative;
-
-
   top: -56px;
   left: 0vw;
   width: 100vw;
   height: 111vh;
   background: white;
 
-  stroke-dasharray: 2500;
+  stroke-dasharray: 2;
   stroke-dashoffset: 2500;
-  animation: lineStroke 6s linear forwards infinite;
+  animation: lineStroke 10s linear forwards infinite;
 }
 
 @keyframes lineStroke {
